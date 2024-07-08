@@ -1,12 +1,12 @@
-İlk hafta geliştirdiğiniz api kullanılacaktır.
+İlk hafta geliştirdiğiniz api kullanılacaktır. +
 
-Rest standartlarına uygun olmalıdır.
+Rest standartlarına uygun olmalıdır. +
 
-solid prensiplerine uyulmalıdır.
+solid prensiplerine uyulmalıdır. +
 
-Fake servisler geliştirilerek Dependency injection kullanılmalıdır.
+Fake servisler geliştirilerek Dependency injection kullanılmalıdır. +
 
-Ap’ nizde kullanılmak üzere extension geliştirin.
+Api’ nizde kullanılmak üzere extension geliştirin.
 
 Projede swagger implementasyonu gerçekleştirilmelidir.
 
