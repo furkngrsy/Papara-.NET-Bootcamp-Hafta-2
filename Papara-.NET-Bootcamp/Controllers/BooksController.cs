@@ -1,5 +1,6 @@
 ﻿using Papara_Bootcamp.Models;
 using Papara_Bootcamp.Services;
+using Papara_Bootcamp.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,10 +44,13 @@ namespace Papara_Bootcamp.Controllers
                     StatusCode = 404
                 });
             }
+
+            string isClassic = (book.IsClassic()) ? "Bu kitap klasik bir eserdir." : "Bu kitap klasik bir eser değildir."; // Extension kullanımına bir örnek.
+
             return Ok(new ApiResponse<Book>
             {
                 Success = true,
-                Message = "Kitap başarılı bir şekilde getirildi.",
+                Message = $"Kitap başarılı bir şekilde getirildi. {isClassic}", 
                 Data = book,
                 StatusCode = 200
             });
