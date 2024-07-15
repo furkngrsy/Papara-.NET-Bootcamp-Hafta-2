@@ -6,11 +6,11 @@ solid prensiplerine uyulmalıdır. +
 
 Fake servisler geliştirilerek Dependency injection kullanılmalıdır. +
 
-Api’ nizde kullanılmak üzere extension geliştirin.
+Api’ nizde kullanılmak üzere extension geliştirin. +
 
-Projede swagger implementasyonu gerçekleştirilmelidir.
+Projede swagger implementasyonu gerçekleştirilmelidir. +
 
-Global loglama yapan bir middleware(sadece actiona girildi gibi çok basit düzeyde)
+Global loglama yapan bir middleware(sadece actiona girildi gibi çok basit düzeyde) +
 
 Bonus
 
