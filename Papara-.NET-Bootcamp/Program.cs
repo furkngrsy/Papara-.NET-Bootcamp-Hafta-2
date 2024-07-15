@@ -4,6 +4,7 @@ using System.Net;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Papara_Bootcamp.Services;
+using Papara_Bootcamp.Middlewares;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IBookService, FakeBookService>();
 
 var app = builder.Build();
+
+app.UseMiddleware<ActionEntryLoggingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
